@@ -1,0 +1,73 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3dd5a732-5e4d-41b3-acdf-c3323d7f2720</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Sokuban.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>game_DAY_THUNG</Name>
+    <RootNamespace>game_DAY_THUNG</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.13</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="hill_climbing.py" />
+    <Compile Include="Sokuban.py" />
+    <Compile Include="support_function.py" />
+    <Compile Include="tao_map.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+    <Folder Include="checkspoints\" />
+    <Folder Include="testcases\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\arrow_left.png" />
+    <Content Include="assets\arrow_right.png" />
+    <Content Include="assets\box.png" />
+    <Content Include="assets\found_background.png" />
+    <Content Include="assets\gameFont.ttf" />
+    <Content Include="assets\init_background.png" />
+    <Content Include="assets\loading_background.png" />
+    <Content Include="assets\notfound_background.png" />
+    <Content Include="assets\player.ico" />
+    <Content Include="assets\player.png" />
+    <Content Include="assets\point.png" />
+    <Content Include="assets\space.png" />
+    <Content Include="assets\wall.png" />
+    <Content Include="checkspoints\checkpoints_2.txt" />
+    <Content Include="checkspoints\checkpoints_3.txt" />
+    <Content Include="checkspoints\checkpoints_5.txt" />
+    <Content Include="checkspoints\checkpoint_1.txt" />
+    <Content Include="checkspoints\checkpoint_4.txt" />
+    <Content Include="testcases\map_1.txt" />
+    <Content Include="testcases\map_2.txt" />
+    <Content Include="testcases\map_3.txt" />
+    <Content Include="testcases\map_4.txt" />
+    <Content Include="testcases\map_5.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.11" />
+    <InterpreterReference Include="Global|PythonCore|3.13" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

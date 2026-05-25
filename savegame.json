@@ -1,0 +1,11 @@
+{
+    "max_level": 2,
+    "high_scores": {
+        "1": {
+            "moves": 52,
+            "pushes": 11
+        }
+    },
+    "total_deaths": 6,
+    "total_wins": 1
+}
